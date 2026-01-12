@@ -84,12 +84,12 @@ body {
   background: white;
   color: #007bff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
-
 .filter-buttons button.active {
   background: #007bff;
   color: white;
+  box-shadow: 0 4px 12px rgba(0,123,255,0.3);
 }
 
 /* Todo List */
@@ -97,6 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  transition: all 0.3s ease;
 }
 
 /* Todo Item */
@@ -108,17 +109,19 @@ body {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: 0.2s;
+  transition: all 0.3s ease;
 }
-
 .todo-item:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background: #f0f8ff; /* subtle highlight */
 }
 
 .todo-item.completed span {
   text-decoration: line-through;
   color: grey;
-  opacity: 0.7;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 
 .todo-item .left {
@@ -130,6 +133,12 @@ body {
 .todo-item input[type="checkbox"] {
   width: 20px;
   height: 20px;
+  accent-color: #007bff; /* modern blue check */
+  transition: transform 0.2s ease;
+}
+
+.todo-item input[type="checkbox"]:checked {
+  transform: scale(1.2);
 }
 
 .todo-item .delete-btn {
