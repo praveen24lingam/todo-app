@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({
   origin: [
-    'https://todo-app-mu-two-88.vercel.app/' ,
+    'https://todo-app-mu-two-88.vercel.app' ,
     'http://localhost:5173', // local dev
     
   ]
