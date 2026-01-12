@@ -11,8 +11,8 @@ A modern, full-stack task management application that helps users organize their
 
 ## 📸 Screenshots
 
-![Todo App Interface](./screenshots/Todo_Image.png)
-![Todo App Features](./screenshots/Todo-Image.png)
+![Todo App Interface](src/screenshots/Todo_Image.png)
+![Todo App Features](src/screenshots/Todo-Image.png)
 
 ## 📋 Table of Contents
 
