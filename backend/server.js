@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     'http://localhost:5173', // local dev
-    'https://your-frontend.vercel.app' // deploy ke baad Vercel URL
+    'https://todo-app-mu-two-88.vercel.app/' // deploy ke baad Vercel URL
   ]
 }));
 
